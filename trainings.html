@@ -1,0 +1,167 @@
+<html>
+<head>
+	<base href="trainingClassics">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<!--[if  lt IE 8]><style type="text/css">#main{margin:0;}</style><![endif]-->
+	<link rel="stylesheet" href="./css/slimbox2.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="./css/jquery-ui-1.8.17.custom.css" type="text/css" media="screen">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="./js/slimbox2.js"></script>
+	<script type="text/javascript" src="./js/js.js"></script>
+	<title>Классика тренинга - Тренинги.</title>
+</head>
+
+<div id="body">
+<div id="header"></div>
+<div id="navi">
+	<ul class="menu" id="navig">
+		<li>
+			<a href="index.html">
+				<div id="home"></div>
+			</a>
+		</li>
+		<li id="rollig">
+			<a href="trainings.html">
+				<div id="trainings"></div>
+			</a>
+			<ul class="menu" id="training">
+				<li><a href="./trainings.html?type=1">Консультанты</a></li>
+				<li><a href="./trainings.html?type=2">Подбор персонала</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="insunrise.html">
+				<div id="insunrise"></div>
+			</a>
+		</li>
+		<li>
+			<a href="calendar.html">
+				<div id="calendar"></div>
+			</a>
+		</li>
+		<li>
+			<a href="faq.html">
+				<div id="faq"></div>
+			</a>
+		</li>
+	</ul>
+
+	<div id="regions">
+	Мы предоставляем свои услуги не только в Смоленске, но и в Области. А также в Москве, Киеве, Харькове, Ульяновске, Казани и в Н.Новгороде!
+	</div>
+</div>
+
+<div id="main">
+	<h1>Тренинги.</h1>
+	<div class="content"></div>
+
+	<script type="text/javascript">
+			var loc = location.href;
+			var type = loc[loc.length - 1];
+			var container = $('.content');
+
+			if (type == 1) {
+				container.html(`
+				<div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=1#"><strong>Действенная презентация.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 1-2 дня</h3>
+										<p>Подготовка, выбор места, этапы проведения, управление аудиторией, элементы НЛП и прочее..</p>
+										<h3>Цена: <strong>3 500 руб</strong> для одного участника и <strong>25 000 руб</strong> для группы</h3>
+									</div>
+
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=1#"><strong>Основы мерчендайзинга.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 1 день</h3>
+										<p>Определение Мерчендайзинга; виды покупок; классификация товаров; принципы мерчендайзинга; составляющие этапа мерчендайзинга; направления мерчендайзинга; "правильное"расположение места продажи; характеристики мест и "точек" продаж; принципы правильной выкладки; рекламное оформление места продажи; размещение рекламных материалов; рекламные кампании -их виды и схемы проведения.</p>
+										<h3>Цена: <strong>3 000 руб</strong> для одного участника и <strong>26 000 руб</strong> для группы</h3>
+									</div>
+
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=1#"><strong>Продажи по телефону.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 1 день</h3>
+										<p>Этапы работы телефонного оператора; "телефонный" этикет; виды звонков; техника продаж по телефону.</p>
+										<h3>Цена: <strong>4 500 руб</strong> для одного участника и <strong>20 000 руб</strong> для группы</h3>
+									</div>
+
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=1#"><strong>Профессионал переговоров.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 2 дня</h3>
+										<p>Отрабатываются все стадии, присущие переговорному процессу, объясним разницу между продажами и переговорами, представится  возможность провести не один раунд переговоров с последующим разбором.</p>
+										<h3>Цена: <strong>6 000 руб</strong> для одного участника и <strong>50 000 руб</strong> для группы</h3>
+									</div>
+
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=1#"><strong>СПИН - консультативные продажи или техника больших продаж.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 2 дня</h3>
+										<p>Определение и структура консультативных продаж; основные качества, знания и навыки эффективного продавца; ступени процесса консультативных продаж; техника задавания вопросов SPIN; предложение решения выявленных проблем; представление выгод; ролевые игры с разбором (анализ видеозаписи).</p>
+										<h3>Цена: <strong>6 500 руб</strong> для одного участника и <strong>52 000 руб</strong> для группы</h3>
+									</div>
+
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=1#"><strong>Эффективные продажи.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 2-3 дня</h3>
+										<p> Обязанности и описание работы ТП; планирование и организация работы ТП; Этапы посещения(структура визита); выяснение и(или) создание потребностей клиента; "активное слушание"; техника эффективной презентации; преодоление возражений; типы завершения визита; работа с дебиторской задолженностью; отчетность... В ходе тренинга проводится видеосьемка ролевых игр с подробным разбором.</p>
+										<h3>Цена: <strong>5 500 руб</strong> для одного участника и <strong>40 000 руб</strong> для группы</h3>
+									</div>
+								</div><p><strong>Обратите внимание</strong>, что наша фирма также предоставляет возможность разработки эксклюзивной программы тренинга специально под заказчика. Отправляйте нам свои идеи и мы будем разрабатывать новые программы, следуя вашим пожеланиям.</p>
+			<form id="form" action="trainings.html?type=1" method="post">
+				<label>
+					Ваш E-Mail:
+					<input type="text" name="email" id="email">
+				</label>
+				<textarea name="add" rows="5" id="trainin"></textarea>
+				<label>
+					Сколько будет <strong id="a">6</strong> плюс <strong id="b">2</strong>?
+					<input type="text" name="c" id="c">
+				</label>
+				<input type="hidden" name="a" value="6">
+				<input type="hidden" name="b" value="2">
+				<input type="submit" name="submit" value="Отправить">
+			</form>
+				`);
+			} else if (type == 2) {
+				container.html(`
+				<div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+									<h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><a href="trainings.html?type=2#"><strong>Навыки проведения интервью.</strong></a></h2>
+									<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+										<h3>Продолжительность: 1 день</h3>
+										<p>Определение структурированного поведенческого интервью; предварительная подготовка; анализ резюме; структура интервью; получение небходимой информации в ходе интервью;  "идеальный" кандидат; распространенные ловушки, в которые попадают интервьюеры.</p>
+										<h3>Цена: <strong>4 000 руб</strong> для одного участника и <strong>24 000 руб</strong> для группы</h3>
+									</div>
+								</div><p><strong>Обратите внимание</strong>, что наша фирма также предоставляет возможность разработки эксклюзивной программы тренинга специально под заказчика. Отправляйте нам свои идеи и мы будем разрабатывать новые программы, следуя вашим пожеланиям.</p>
+			<form id="form" action="trainings.html?type=2" method="post">
+				<label>
+					Ваш E-Mail:
+					<input type="text" name="email" id="email">
+				</label>
+				<textarea name="add" rows="5" id="trainin"></textarea>
+				<label>
+					Сколько будет <strong id="a">6</strong> плюс <strong id="b">1</strong>?
+					<input type="text" name="c" id="c">
+				</label>
+				<input type="hidden" name="a" value="6">
+				<input type="hidden" name="b" value="1">
+				<input type="submit" name="submit" value="Отправить">
+			</form>
+				`);
+			} else {
+				container.html(`
+					<h3>Для кого нужно найти интересующую программу обучения?</h3>
+					<a href="trainings.html?type=1">Продавцы-консультанты, менеджеры по продажам.</a><br>
+					<a href="trainings.html?type=2">Специалисты по подбору персонала.</a><br>
+				`);
+			}
+	</script>
+</div>
+
+<div id="footer">
+	<a href="index.html">
+		<div id="index" class="sertif"></div>
+	</a>
+</div>
+</body></html>
